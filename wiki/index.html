@@ -147,6 +147,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/print</li>
 
+<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/permalink</li>
+
 <li>$:/core</li>
 
 <li>$:/GitHub/Filename</li>
@@ -159,7 +161,13 @@ Error message and password prompt
 
 <li>$:/isEncrypted</li>
 
+<li>$:/palette</li>
+
 <li>$:/SiteTitle</li>
+
+<li>$:/state/sidebar</li>
+
+<li>$:/state/tab--1963855381</li>
 
 <li>$:/state/tab--2112689675</li>
 
@@ -177,9 +185,15 @@ Error message and password prompt
 
 <li>$:/temp/info-plugin</li>
 
+<li>$:/theme</li>
+
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>$:/themes/tiddlywiki/vanilla/options/stickytitles</li>
+
+<li>$:/view</li>
 
 </ul>
 </p>
@@ -203,6 +217,9 @@ Error message and password prompt
 </div>
 <div created="20201123215603340" modified="20201123215604356" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/print">
 <pre>hide</pre>
+</div>
+<div created="20201123221919813" modified="20201123221919813" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/permalink">
+<pre>show</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -9592,8 +9609,17 @@ Error message and password prompt
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
+<div created="20201123221831315" modified="20201123221848814" title="$:/palette">
+<pre>$:/palettes/Twilight</pre>
+</div>
 <div created="20201118015317298" modified="20201118015319013" title="$:/SiteTitle">
 <pre>Tim's Notebook</pre>
+</div>
+<div created="20201123221744441" modified="20201123221747521" title="$:/state/sidebar">
+<pre>yes</pre>
+</div>
+<div created="20201123221814588" modified="20201123221923747" title="$:/state/tab--1963855381">
+<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
 <div created="20201123215235198" modified="20201123215235198" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
@@ -9601,19 +9627,19 @@ Error message and password prompt
 <div created="20201123215237749" modified="20201123215242416" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/LoadedModules</pre>
 </div>
-<div created="20201118014130411" modified="20201123215348860" title="$:/state/tab-1749438307">
+<div created="20201118014130411" modified="20201123222006269" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20201118014221202" modified="20201118014221202" title="$:/state/tab-2065006209">
+<div created="20201118014221202" modified="20201123222009862" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20201123215249665" modified="20201123221035361" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Tools</pre>
+<div created="20201123215249665" modified="20201123222001839" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201123215347126" list="$:/Manager $:/ControlPanel GettingStarted" modified="20201123215612370" title="$:/StoryList">
+<div created="20201123221805000" list="GettingStarted $:/ControlPanel" modified="20201123221805000" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9629,19 +9655,19 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/Users/Tim.Walker/Documents/GitHub/tiddly/wiki/index.html&quot;
+            &quot;text&quot;: &quot;https://subliminalchords.github.io//wiki/&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;&quot;
+            &quot;text&quot;: &quot;subliminalchords.github.io&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;&quot;
+            &quot;text&quot;: &quot;subliminalchords.github.io&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;file:&quot;
+            &quot;text&quot;: &quot;https:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
@@ -9649,7 +9675,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/Users/Tim.Walker/Documents/GitHub/tiddly/wiki/index.html&quot;
+            &quot;text&quot;: &quot;//wiki/&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9657,15 +9683,15 @@ Error message and password prompt
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;null&quot;
+            &quot;text&quot;: &quot;https://subliminalchords.github.io&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1920&quot;
+            &quot;text&quot;: &quot;836&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1080&quot;
+            &quot;text&quot;: &quot;396&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
@@ -9673,6 +9699,9 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20201123221813748" modified="20201123221902232" title="$:/theme">
+<pre>$:/themes/tiddlywiki/snowwhite</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -9782,6 +9811,12 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20201123221941398" modified="20201123221941398" title="$:/themes/tiddlywiki/vanilla/options/stickytitles">
+<pre>yes</pre>
+</div>
+<div created="20201123221817711" modified="20201123221817711" title="$:/view">
+<pre>pop</pre>
 </div>
 
 
